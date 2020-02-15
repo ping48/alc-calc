@@ -12,24 +12,30 @@
         android:layout_height="180dp"
         android:layout_marginStart="116dp"
         android:layout_marginEnd="115dp"
-        android:contentDescription="image of shot"
+        android:background="#ACE1AF"
+        android:contentDescription="@string/image_of_shot"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/wineButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/beerButton"
-        app:srcCompat="#2196F3" />
+        app:srcCompat="#2196F3"
+        tools:srcCompat="@drawable/shotglass" />
 
     <ImageButton
         android:id="@+id/wineButton"
         android:layout_width="180dp"
         android:layout_height="0dp"
         android:layout_marginBottom="47dp"
-        android:contentDescription="image of wine"
+        android:background="#B19CD9"
+        android:contentDescription="@string/image_of_wine"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shotButton"
-        app:srcCompat="#E91E63" />
+        app:srcCompat="#E91E63"
+        tools:srcCompat="@drawable/wineglass" />
 
     <ImageButton
         android:id="@+id/beerButton"
@@ -38,10 +44,13 @@
         android:layout_marginStart="116dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="115dp"
-        android:contentDescription="image of beer"
+        android:background="#FFFFA1"
+        android:contentDescription="@string/image_of_beer"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/shotButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/colorAccent" />
+        app:srcCompat="#D8D80A"
+        tools:srcCompat="@drawable/beercan" />
 </androidx.constraintlayout.widget.ConstraintLayout>
