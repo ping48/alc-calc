@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/shotglass" />
+        tools:src="@drawable/shotglass" />
 
     <ImageButton
         android:id="@+id/wineButton"
@@ -38,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/wineglass" />
+        tools:src="@drawable/wineglass" />
 
     <ImageButton
         android:id="@+id/beerButton"
@@ -53,7 +53,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@drawable/beercan" />
+        tools:src="@drawable/beercan" />
 
     <Button
         android:id="@+id/otherButton"
@@ -75,7 +75,13 @@
         android:id="@+id/statusButton"
         android:layout_width="216dp"
         android:layout_height="63dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="492dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="48dp"
         android:text="See how you're doing"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="492dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

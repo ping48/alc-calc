@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 //
                 int pounds2 = Integer.parseInt(pounds1);
                 //change this to ButtonPage
-                Intent i = new Intent(MainActivity.this, MainActivity.class);
+                Intent i = new Intent(MainActivity.this, buttonpage.class);
                 i.putExtra("height", totalInches);
                 i.putExtra("weight", pounds2);
                 i.putExtra("genderValue", gendVal);

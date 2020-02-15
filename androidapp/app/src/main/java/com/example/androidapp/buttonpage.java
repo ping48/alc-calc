@@ -62,6 +62,7 @@ public class buttonpage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(buttonpage.this, status.class);
+                startActivity(i);
             }
         }));
 
