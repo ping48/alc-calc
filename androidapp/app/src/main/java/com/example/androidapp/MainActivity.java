@@ -1,15 +1,33 @@
 package com.example.androidapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.example.androidapp.User;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     private RadioGroup gender;
@@ -20,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         gender = (RadioGroup) findViewById(R.id.genders);
         configureNextButton();
+        test();
     }
     private void configureNextButton(){
         Button nextButton = (Button) findViewById(R.id.submit);
@@ -59,4 +78,49 @@ public class MainActivity extends AppCompatActivity {
         theButton = findViewById(radioId);
         Toast.makeText(this, theButton.getText(), Toast.LENGTH_SHORT).show();
     }
+
+    public static void test(){
+//        FirebaseDatabase database = FirebaseDatabase.getInstance();
+////        DatabaseReference myRef = database.getReference("message");
+////
+////        myRef.setValue("Hello, World!");
+//        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
+//        String userID = "XK7AARkwcgBuQNm8LtJX78797";
+//        User user = new User();
+//        user.setU_height(5);
+//        user.setU_weight(10);
+//
+//        DatabaseReference firebaseUser = mDatabase.child("users").child(userID);
+//        firebaseUser.setValue(user);
+//
+//        System.out.println("test");
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+// Create a new user with a first and last name
+        Map<String, Object> user = new HashMap<>();
+        user.put("first", "Ada");
+        user.put("last", "Lovelace");
+        user.put("born", 1815);
+
+// Add a new document with a generated ID
+        db.collection("users")
+                .add(user)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+//                        Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+//                        Log.w(TAG, "Error adding document", e);
+                    }
+                });
+
+    }
+
+//    public static void main(String [] args){
+//        System.out.println("wadaf");
+//        test();
+//    }
 }

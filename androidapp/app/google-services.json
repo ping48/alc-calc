@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "372682634831",
-    "firebase_url": "https://my-project-1539473316155.firebaseio.com",
-    "project_id": "my-project-1539473316155",
-    "storage_bucket": "my-project-1539473316155.appspot.com"
+    "project_number": "837710365990",
+    "firebase_url": "https://alc-calc-app.firebaseio.com",
+    "project_id": "alc-calc-app",
+    "storage_bucket": "alc-calc-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:372682634831:android:90a6d53168dc8895171c3a",
+        "mobilesdk_app_id": "1:837710365990:android:97ba014e725513177aede7",
         "android_client_info": {
           "package_name": "com.example.androidapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "372682634831-blf9ld88faobp9sso1rp6gkh0agkh1ul.apps.googleusercontent.com",
+          "client_id": "837710365990-cdnpk31ah0db38btr8p7uk8dad75o7ne.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androidapp",
+            "certificate_hash": "81c3c8140317bcf0bfb6d7dbb1e2883deb178589"
+          }
+        },
+        {
+          "client_id": "837710365990-k38mfh8ilbnns7ttpeqio1lkepqo7mmd.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCd_y3WcSy1F0tBSq1YNziF6Ujnshw6rT8"
+          "current_key": "AIzaSyCr7arJBTGEpBTxk6_soZvmMoPj_h8NtlE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "372682634831-blf9ld88faobp9sso1rp6gkh0agkh1ul.apps.googleusercontent.com",
+              "client_id": "837710365990-k38mfh8ilbnns7ttpeqio1lkepqo7mmd.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
