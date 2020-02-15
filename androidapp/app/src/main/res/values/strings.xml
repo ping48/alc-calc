@@ -7,4 +7,8 @@
     <string name="weight_in_pounds">weight in pounds</string>
     <string name="submit">Submit</string>
     <string name="gender">Gender</string>
+    <string name="image_of_wine">image of wine</string>
+    <string name="image_of_shot">image of shot</string>
+    <string name="image_of_beer">image of beer</string>
+    <string name="face_content_description">happy, straight, or sad face</string>
 </resources>
