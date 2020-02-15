@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buttonpage">
+
+    <ImageButton
+        android:id="@+id/shotButton"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="387dp"
+        android:background="#ACE1AF"
+        android:contentDescription="@string/image_of_shot"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/shotglass" />
+
+    <ImageButton
+        android:id="@+id/wineButton"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="215dp"
+        android:layout_marginBottom="167dp"
+        android:background="#B19CD9"
+        android:contentDescription="@string/image_of_wine"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/wineglass" />
+
+    <ImageButton
+        android:id="@+id/beerButton"
+        android:layout_width="180dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="215dp"
+        android:layout_marginBottom="389dp"
+        android:background="#FFFFA1"
+        android:contentDescription="@string/image_of_beer"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/beercan" />
+
+    <Button
+        android:id="@+id/otherButton"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="167dp"
+        android:background="#AFEEEE"
+        android:text="Other"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/statusButton"
+        android:layout_width="216dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="492dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="48dp"
+        android:text="See how you're doing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
