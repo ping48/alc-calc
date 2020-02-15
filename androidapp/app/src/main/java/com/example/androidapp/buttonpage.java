@@ -2,21 +2,28 @@ package com.example.androidapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 //new imports underneath
 
 public class buttonpage extends AppCompatActivity {
-    ImageButton beerButton;
-    ImageButton shotButton;
-    ImageButton wineButton;
+    private ImageButton beerButton;
+    private ImageButton shotButton;
+    private ImageButton wineButton;
+    private Button otherButton;
+    private Button statusButton;
     double num_drinks = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addBeer();
         setContentView(R.layout.activity_buttonpage);
+        addBeer();
+        addShot();
+        addWine();
+        gotoStatus();
 
     }
     private void addBeer(){//adds one standard drink after beer button is pressed
@@ -48,5 +55,15 @@ public class buttonpage extends AppCompatActivity {
                 num_drinks++; //replace with inserting data in data base with time stamp
             }
         }));
+    }
+    private void gotoStatus() {
+        statusButton = findViewById(R.id.statusButton);
+        statusButton.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(buttonpage.this, status.class);
+            }
+        }));
+
     }
 }
