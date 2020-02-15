@@ -23,19 +23,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkButton"
-            android:text="Male" />
+            android:text="@string/male" />
 
         <RadioButton
             android:id="@+id/radio_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkButton"
-            android:text="Female" />
+            android:text="@string/female" />
     </RadioGroup>
 
     <EditText
         android:id="@+id/heightFoot"
-        android:layout_width="115dp"
+        android:layout_width="70dp"
         android:layout_height="45dp"
         android:layout_marginEnd="200dp"
         android:ems="10"
@@ -43,21 +43,19 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/heightInches"
-        android:layout_width="115dp"
+        android:layout_width="70dp"
         android:layout_height="45dp"
-        android:layout_marginStart="200dp"
         android:ems="10"
         android:hint="@string/inches"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="279dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -84,12 +82,28 @@
 
     <EditText
         android:id="@+id/weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
         android:layout_marginTop="150dp"
         android:ems="10"
         android:hint="@string/weight_in_pounds"
         android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="474dp"
+        android:layout_marginEnd="201dp"
+        android:layout_marginBottom="110dp"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
