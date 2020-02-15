@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Android App</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="feet">feet</string>
+    <string name="inches">inches</string>
+    <string name="weight_in_pounds">weight in pounds</string>
+    <string name="submit">Submit</string>
+    <string name="gender">Gender</string>
 </resources>
