@@ -1,4 +1,4 @@
-package com.example.alc_calc;
+package com.example.androidapp;
 
 import org.junit.Test;
 
