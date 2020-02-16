@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".customizedrink"></activity>
+        <activity android:name=".customizedrink" />
         <activity android:name=".status" />
         <activity android:name=".buttonpage" />
         <activity android:name=".MainActivity">
