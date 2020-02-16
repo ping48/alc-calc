@@ -24,7 +24,36 @@ public class buttonpage extends AppCompatActivity {
         addShot();
         addWine();
         gotoStatus();
+    }
+    public static void send_Data_firebase()
+    {
 
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        String userRefID = getIntent().getStringExtra("currentUserRefID");
+        DocumentReference userRef = db.collection("users").document("userRefID");
+        userRef.update("totalAlcSoFar", FieldValue.increment(1));
+
+        // Add a new document with a generated id.
+        Map<String, Object> data = new HashMap<>();
+        data.put("alc_amount", 1);
+        data.put("timestamp", FieldValue.serverTimestamp());
+
+        //create a subcollection drinks_record
+        CollectionReference drinks_record = userRef.collection("drinks_record");
+
+        drinks_record.add(data)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        Log.d(TAG, "DocumentSnapshot written with ID: " + documentReference.getId());
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.w(TAG, "Error adding document", e);
+                    }
+                });
     }
     private void addBeer(){//adds one standard drink after beer button is pressed
         beerButton = findViewById(R.id.beerButton);
@@ -32,7 +61,7 @@ public class buttonpage extends AppCompatActivity {
         beerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                num_drinks++; //replace with inserting data in data base with time stamp
+                send_Data_firebase(); //replace with inserting data in data base with time stamp
             }
         });
 
@@ -43,7 +72,7 @@ public class buttonpage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                num_drinks++; //replace with inserting data in data base with time stamp
+                send_Data_firebase(); //replace with inserting data in data base with time stamp
             }
         }));
     }
@@ -53,7 +82,7 @@ public class buttonpage extends AppCompatActivity {
         wineButton.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                num_drinks++; //replace with inserting data in data base with time stamp
+                send_Data_firebase(); //replace with inserting data in data base with time stamp
             }
         }));
     }

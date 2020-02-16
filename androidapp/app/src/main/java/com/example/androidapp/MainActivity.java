@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private static double gend;
     private static double height;
     private static int weight;
+    private static DocumentReference curUserRef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
                 if(((String)(theButton.getText())).equals("Male")){
                     gendVal = 0.73;
                     gend = gendVal;
-                    System.out.println("yee");
                 }
 
                 else{
@@ -79,9 +79,9 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("height", totalInches);
                 i.putExtra("weight", pounds2);
                 i.putExtra("genderValue", gendVal);
+                send_data_to_firebase();
+                i.putExtra("currentUserRefID", curUserRefID);
                 startActivity(i);
-
-                test();
             }
         });
     }
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, theButton.getText(), Toast.LENGTH_SHORT).show();
     }
 
-    public static void test(){
+    public static void send_data_to_firebase(){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 // Create a new user with a first and last name
         Map<String, Object> user = new HashMap<>();
@@ -101,25 +101,9 @@ public class MainActivity extends AppCompatActivity {
         user.put("totalAlcSoFar", 0);
 
 // Add a new document with a generated ID
-        db.collection("users")
-                .add(user)
-                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                    @Override
-                    public void onSuccess(DocumentReference documentReference) {
-//                        Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-//                        Log.w(TAG, "Error adding document", e);
-                    }
-                });
-
+        curUserRef = db.collection("users").document();
+        curUserRefID = curUserRef.getId();
+        curUserRef.set(user);
     }
 
-//    public static void main(String [] args){
-//        System.out.println("wadaf");
-//        test();
-//    }
 }
