@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         user.put("totalAlcSoFar", 0);
         user.put("timestamp", FieldValue.serverTimestamp());
 
+
         if(firstDrink){
             Date date = new Date();
             ts = new Timestamp(date.getTime());
