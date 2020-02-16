@@ -10,8 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -19,6 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -56,11 +59,11 @@ public class buttonpage extends AppCompatActivity {
         DocumentReference userRef = db.collection("users").document(userID);
         userRef.update("totalAlcSoFar", FieldValue.increment(1));
 
-        if(firstDrink){
-            Date date = new Date();
-            ts = new Timestamp(date.getTime());
-            firstDrink = false;
-        }
+//        if(firstDrink){
+//            Date date = new Date();
+//            ts = new Timestamp(date.getTime());
+//            firstDrink = false;
+//        }
 
         // Add a new document with a generated id.
         Map<String, Object> data = new HashMap<>();
@@ -125,32 +128,57 @@ public class buttonpage extends AppCompatActivity {
         statusButton.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("users").child(userID);
+                FirebaseFirestore fr = FirebaseFirestore.getInstance();
+                //get data once
 
-//                DocumentReference userRef = db.collection("users").document(userID);
-                dr.addValueEventListener(new ValueEventListener() {
+                DocumentReference userRef = fr.collection("users").document(userID);
+                userRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>(){
                     @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        long totalAlc = (long)dataSnapshot.child("totalAlcSoFar").getValue();
-                        long start = (long)dataSnapshot.child("firstTimestamp").getValue();
-                        long weight = (long)dataSnapshot.child("weight").getValue();
-                        long gender = (long)dataSnapshot.child("gender").getValue();
-                        long now = System.currentTimeMillis();
-                        long elapsedTime = now - start; //in milliseconds
-                        long elapsedTimeinHours = (elapsedTime * 1000) / 3600;
-                        bac = (long)(totalAlc * 0.6) * (long)5.14 / (weight * gender) - (long)(0.015 * elapsedTimeinHours);
-                        Log.d("bac", String.bac);
-                        if (totalAlc == 0 || bac < 0)
-                        {
-                            bac = 0;
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        if (task.isSuccessful()) {
+                            DocumentSnapshot document = task.getResult();
+                            long totalAlc = document.getLong("totalAlcSoFar");
+                            long start = document.getLong("firstTimestamp");
+                            long weight = document.getLong("weight");
+                            long gender = document.getLong("gender");
+                            long now = System.currentTimeMillis();
+                            long elapsedTime = now - start; //in milliseconds
+                            long elapsedTimeinHours = (elapsedTime * 1000) / 3600;
+                            bac = (long)(totalAlc * 0.6) * (long)5.14 / (weight * gender) - (long)(0.015 * elapsedTimeinHours);
+                            if (document.exists()) {
+                                Log.d("aa", "DocumentSnapshot data: " + document.getData());
+                            } else {
+                                Log.d("bb", "No such document");
+                            }
+                        } else {
+                            Log.d("cc", "get failed with ", task.getException());
                         }
-
                     }
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError){
 
-                    }
                 });
+//                dr.addValueEventListener(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                        long totalAlc = (long)dataSnapshot.child("totalAlcSoFar").getValue();
+//                        long start = (long)dataSnapshot.child("firstTimestamp").getValue();
+//                        long weight = (long)dataSnapshot.child("weight").getValue();
+//                        long gender = (long)dataSnapshot.child("gender").getValue();
+//                        long now = System.currentTimeMillis();
+//                        long elapsedTime = now - start; //in milliseconds
+//                        long elapsedTimeinHours = (elapsedTime * 1000) / 3600;
+//                        bac = (long)(totalAlc * 0.6) * (long)5.14 / (weight * gender) - (long)(0.015 * elapsedTimeinHours);
+////                        Log.d("bac", bac);
+//                        if (totalAlc == 0 || bac < 0)
+//                        {
+//                            bac = 0;
+//                        }
+//
+//                    }
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError databaseError){
+//
+//                    }
+//                });
 
 
                 Intent i = new Intent(buttonpage.this, status.class);

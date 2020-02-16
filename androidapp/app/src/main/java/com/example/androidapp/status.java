@@ -18,7 +18,10 @@ public class status extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_status);
-            bac = Long.parseLong(getIntent().getStringExtra("bac"));
+            String s = getIntent().getStringExtra("bac");
+            if(s != null){
+                bac = Long.parseLong(s);
+            }
             displayBac(); //display the BAC level
             displayFace(); //displays face corresponding to user bac content
         }

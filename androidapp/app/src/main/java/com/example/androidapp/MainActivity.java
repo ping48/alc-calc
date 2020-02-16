@@ -139,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 // Add a new document with a generated ID
+        //put username in document(in here)
         curUserRef = db.collection("users").document();
         curUserRefID = curUserRef.getId();
         curUserRef.set(user);
