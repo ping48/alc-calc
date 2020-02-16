@@ -51,11 +51,17 @@
         android:id="@+id/heightInches"
         android:layout_width="70dp"
         android:layout_height="45dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="279dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginBottom="279dp"
         android:ems="10"
         android:hint="@string/inches"
         android:inputType="number"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="279dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -82,7 +88,7 @@
 
     <EditText
         android:id="@+id/weight"
-        android:layout_width="135dp"
+        android:layout_width="145dp"
         android:layout_height="45dp"
         android:layout_marginTop="150dp"
         android:ems="10"
@@ -90,7 +96,7 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.316" />
