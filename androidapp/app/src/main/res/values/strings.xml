@@ -22,5 +22,6 @@
     <string name="your_bac_is">Your BAC is:</string>
     <string name="go_back">Go Back</string>
     <string name="hours_since_first_drink">Hours Since First Drink</string>
+    <string name="manual">Manual</string>
 
 </resources>
