@@ -23,5 +23,7 @@
     <string name="go_back">Go Back</string>
     <string name="hours_since_first_drink">Hours Since First Drink</string>
     <string name="manual">Manual</string>
+    <string name="wanring">WARNING: Your BAC has reached dangerous levels. Seek help immediately!</string>
+    <string name="warningsymbol">warningsymbol</string>
 
 </resources>

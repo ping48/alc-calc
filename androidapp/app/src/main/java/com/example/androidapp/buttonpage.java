@@ -118,6 +118,10 @@ public class buttonpage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 send_Data_firebase(); //replace with inserting data in data base with time stamp
+                if (bac>=0.2) {
+                    Intent i = new Intent(buttonpage.this, warning.class);
+                    startActivity(i);
+                }
             }
         });
 
@@ -129,6 +133,10 @@ public class buttonpage extends AppCompatActivity {
             public void onClick(View v) {
 
                 send_Data_firebase(); //replace with inserting data in data base with time stamp
+                if (bac>=0.2) {
+                    Intent i = new Intent(buttonpage.this, warning.class);
+                    startActivity(i);
+                }
             }
         }));
     }
@@ -139,6 +147,10 @@ public class buttonpage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 send_Data_firebase(); //replace with inserting data in data base with time stamp
+                if (bac>=0.2) {
+                    Intent i = new Intent(buttonpage.this, warning.class);
+                    startActivity(i);
+                }
             }
         }));
     }
@@ -197,6 +209,10 @@ public class buttonpage extends AppCompatActivity {
         }));
 
     }
+    private void warning() {
+
+    }
+
 
     }
 

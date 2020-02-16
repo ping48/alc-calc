@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Calculator"></activity>
+        <activity android:name=".warning"></activity>
         <activity android:name=".customizedrink" />
         <activity android:name=".status" />
         <activity android:name=".buttonpage" />
