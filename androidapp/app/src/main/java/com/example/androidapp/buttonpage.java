@@ -31,7 +31,6 @@ public class buttonpage extends AppCompatActivity {
     private Button statusButton;
     private static Timestamp ts;
     private static boolean firstDrink = true;
-    double num_drinks = 0;
     static String userID = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,11 +60,10 @@ public class buttonpage extends AppCompatActivity {
         data.put("alc_amount", 1);
         data.put("timestamp", FieldValue.serverTimestamp());
 
-
-
-
-
-
+        if(firstDrink){
+            userRef.update("firstTimestamp", FieldValue.serverTimestamp());
+            firstDrink = false;
+        }
 
         //create a subcollection drinks_record
         CollectionReference drinks_record = userRef.collection("drinks_record");

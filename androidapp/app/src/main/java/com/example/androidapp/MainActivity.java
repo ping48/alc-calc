@@ -105,13 +105,8 @@ public class MainActivity extends AppCompatActivity {
         user.put("weight", weight);
         user.put("height", height);
         user.put("totalAlcSoFar", 0);
-        user.put("timestamp", FieldValue.serverTimestamp());
+        user.put("firstTimestamp", "");
 
-        if(firstDrink){
-            Date date = new Date();
-            ts = new Timestamp(date.getTime());
-            firstDrink = false;
-        }
 
 //        db.collection("users")
 //                .add(user)
@@ -135,7 +130,6 @@ public class MainActivity extends AppCompatActivity {
         curUserRef = db.collection("users").document();
         curUserRefID = curUserRef.getId();
         curUserRef.set(user);
-        System.out.println("hello");
     }
 
 }
