@@ -46,7 +46,6 @@ public class customizedrink extends buttonpage {
                     beep1.setText("");
                     startActivity(i);
                 }
-                 num_drinks+=ouncesDrank*percentAlc;
             }
         });
     }

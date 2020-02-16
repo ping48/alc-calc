@@ -12,6 +12,11 @@ import android.widget.ImageButton;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FieldValue;
@@ -31,6 +36,7 @@ public class buttonpage extends AppCompatActivity {
     private Button statusButton;
     private static Timestamp ts;
     private static boolean firstDrink = true;
+    private static long bac;
     static String userID = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,24 +125,37 @@ public class buttonpage extends AppCompatActivity {
         statusButton.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseFirestore db = FirebaseFirestore.getInstance();
-                DocumentReference userRef = db.collection("users").document(userID);
-                userRef.addValueEventListener(new ValueEventListener() {
+                DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("users").child(userID);
+
+//                DocumentReference userRef = db.collection("users").document(userID);
+                dr.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        long totalAlc = dataSnapshot.child("totalAlcSoFar").getValue();
+                        long totalAlc = (long)dataSnapshot.child("totalAlcSoFar").getValue();
                         long start = (long)dataSnapshot.child("firstTimestamp").getValue();
+                        long weight = (long)dataSnapshot.child("weight").getValue();
+                        long gender = (long)dataSnapshot.child("gender").getValue();
                         long now = System.currentTimeMillis();
                         long elapsedTime = now - start; //in milliseconds
                         long elapsedTimeinHours = (elapsedTime * 1000) / 3600;
-                        if (totalAlc == 0)
+                        bac = (long)(totalAlc * 0.6) * (long)5.14 / (weight * gender) - (long)(0.015 * elapsedTimeinHours);
+                        Log.d("bac", String.bac);
+                        if (totalAlc == 0 || bac < 0)
                         {
-                            //send bac to be 0
+                            bac = 0;
                         }
-                        long bac = //plug in the formula
+
+                    }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError){
+
                     }
                 });
+
+
                 Intent i = new Intent(buttonpage.this, status.class);
+                i.putExtra("bac", bac);
+
                 //pass the bac # using intent
                 startActivity(i);
             }
