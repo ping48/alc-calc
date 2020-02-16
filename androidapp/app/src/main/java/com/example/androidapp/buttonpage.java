@@ -105,6 +105,7 @@ public class buttonpage extends AppCompatActivity {
                 Intent k = new Intent(buttonpage.this, Calculator.class);
                 k.putExtra("weight",weight);
                 k.putExtra("genderValue",gendVal);
+                k.putExtra("currentUserRefID",userID);
                 startActivity(k);
             }
         });
