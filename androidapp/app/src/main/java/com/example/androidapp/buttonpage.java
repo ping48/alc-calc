@@ -39,7 +39,7 @@ public class buttonpage extends AppCompatActivity {
     private Button statusButton;
     private static Timestamp ts;
     private static boolean firstDrink = true;
-    private static long bac;
+    private static double bac;
     static String userID = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,14 +137,14 @@ public class buttonpage extends AppCompatActivity {
                     public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                         if (task.isSuccessful()) {
                             DocumentSnapshot document = task.getResult();
-                            long totalAlc = document.getLong("totalAlcSoFar");
-                            long start = document.getLong("firstTimestamp");
-                            long weight = document.getLong("weight");
-                            long gender = document.getLong("gender");
+                            long totalAlc = (long)document.get("totalAlcSoFar");
+                            long start = (long)document.get("firstTimestamp");
+                            long weight = (long)document.get("weight");
+                            double gender = (double)document.get("gender");
                             long now = System.currentTimeMillis();
                             long elapsedTime = now - start; //in milliseconds
                             long elapsedTimeinHours = (elapsedTime * 1000) / 3600;
-                            bac = (long)(totalAlc * 0.6) * (long)5.14 / (weight * gender) - (long)(0.015 * elapsedTimeinHours);
+                            bac = (double)(totalAlc * 0.6) * (double)5.14 / (weight * gender) - (double) (0.015 * elapsedTimeinHours);
                             if (document.exists()) {
                                 Log.d("aa", "DocumentSnapshot data: " + document.getData());
                             } else {
@@ -182,7 +182,7 @@ public class buttonpage extends AppCompatActivity {
 
 
                 Intent i = new Intent(buttonpage.this, status.class);
-                i.putExtra("bac", bac);
+                i.putExtra("bac-val", bac);
 
                 //pass the bac # using intent
                 startActivity(i);

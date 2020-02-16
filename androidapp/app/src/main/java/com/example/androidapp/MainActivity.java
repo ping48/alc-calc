@@ -71,18 +71,23 @@ public class MainActivity extends AppCompatActivity {
                 EditText pounds = findViewById(R.id.weight);
                 String pounds1 = pounds.getText().toString();
                 int pounds2 = 0;
-                if(!(pounds1.equals("")))
+                if(!(pounds1.equals(""))){
                     pounds2 = Integer.parseInt(pounds1);
-                //
+                }
+                weight = pounds2;
                 int radioId = gender.getCheckedRadioButtonId();
                 double gendVal = 0.0;
                 if(radioId != -1) {
                     theButton = findViewById(radioId);
-                    if ((theButton.getText().toString()).equals("Male"))
+                    if ((theButton.getText().toString()).equals("Male")){
                         gendVal = 0.73;
-                    else
+                    }
+
+                    else{
                         gendVal = 0.66;
+                    }
                 }
+                gend = gendVal;
 
                 //change this to ButtonPage
                 Intent i = new Intent(MainActivity.this, buttonpage.class);
@@ -96,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                     warn.setText("Please complete all fields");
                 }
                 else{
-                    warn.setText("");
+//                    warn.setText("");
                     startActivity(i);
                 }
             }

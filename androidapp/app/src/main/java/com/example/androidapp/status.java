@@ -12,16 +12,19 @@ public class status extends AppCompatActivity {
 
         private TextView bacDisplay;
         private ImageView face;
-        private static long bac; //replace with database info here
+        private static double bac; //replace with database info here
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_status);
-            String s = getIntent().getStringExtra("bac");
-            if(s != null){
-                bac = Long.parseLong(s);
-            }
+            bac = getIntent().getDoubleExtra("bac-val", 0);
+//            if(s != null){
+//                bac = Double.parseDouble(s);
+//            }
+//            else{
+//                bac = 0;
+//            }
             displayBac(); //display the BAC level
             displayFace(); //displays face corresponding to user bac content
         }
