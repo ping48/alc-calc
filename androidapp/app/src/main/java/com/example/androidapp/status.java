@@ -31,11 +31,13 @@ public class status extends AppCompatActivity {
         private void displayFace() {
             face = findViewById(R.id.face);
             if (bac >= 0 && bac < 1) {
-                face.setImageResource(R.drawable.beercan);
-            } else if (bac >= 1 && bac < 2) {
-                face.setImageResource(R.drawable.ic_launcher_foreground);
-            } else {
-                face.setImageResource(R.drawable.wineglass);
+                face.setImageResource(R.drawable.smile);
+            }
+            else if (bac >= 1 && bac < 2) {
+                face.setImageResource(R.drawable.neutral);
+            }
+            else {
+                face.setImageResource(R.drawable.poison);
             }
 
         }

@@ -11,5 +11,10 @@
     <string name="image_of_shot">image of shot</string>
     <string name="image_of_beer">image of beer</string>
     <string name="face_content_description">face changes based on user health</string>
+    <string name="other">Other</string>
+    <string name="see_how_you_re_doing">See how you\'re doing</string>
+    <string name="alcohol_by_volume">% alcohol by volume</string>
+    <string name="ounces_drank">ounces drank</string>
+    <string name="add">Add</string>
 
 </resources>

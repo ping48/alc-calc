@@ -15,14 +15,15 @@
         android:layout_marginEnd="99dp"
         android:layout_marginBottom="420dp"
         android:ems="10"
-        android:hint="% alcohol by volume"
+        android:hint="@string/alcohol_by_volume"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/ouncesDrank"
         app:layout_constraintStart_toStartOf="@+id/ouncesDrank"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/ouncesDrank"
@@ -33,14 +34,15 @@
         android:layout_marginEnd="62dp"
         android:layout_marginBottom="276dp"
         android:ems="10"
-        android:hint="ounces drank"
+        android:hint="@string/ounces_drank"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/addDrink"
         app:layout_constraintStart_toStartOf="@+id/addDrink"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/addDrink"
@@ -50,7 +52,7 @@
         android:layout_marginTop="400dp"
         android:layout_marginEnd="147dp"
         android:layout_marginBottom="114dp"
-        android:text="Add"
+        android:text="@string/add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
