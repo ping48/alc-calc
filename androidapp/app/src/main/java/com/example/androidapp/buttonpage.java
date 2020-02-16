@@ -42,6 +42,7 @@ public class buttonpage extends AppCompatActivity {
         shotButton.setOnClickListener((new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+
                 num_drinks++; //replace with inserting data in data base with time stamp
             }
         }));
