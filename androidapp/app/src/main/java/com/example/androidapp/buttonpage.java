@@ -15,7 +15,7 @@ public class buttonpage extends AppCompatActivity {
     private ImageButton wineButton;
     private Button otherButton;
     private Button statusButton;
-    double num_drinks = 0;
+    public double num_drinks = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +24,7 @@ public class buttonpage extends AppCompatActivity {
         addShot();
         addWine();
         gotoStatus();
-
+        addCustom();
     }
     private void addBeer(){//adds one standard drink after beer button is pressed
         beerButton = findViewById(R.id.beerButton);
@@ -64,6 +64,18 @@ public class buttonpage extends AppCompatActivity {
                 Intent i = new Intent(buttonpage.this, status.class);
             }
         }));
+        }
+    private void addCustom() {
+        otherButton = findViewById(R.id.otherButton);
+        otherButton.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(buttonpage.this, customizedrink.class);
+                startActivity(i);
+            }
+        }));
 
     }
-}
+
+    }
+

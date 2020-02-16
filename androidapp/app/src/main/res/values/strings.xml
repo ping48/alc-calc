@@ -3,4 +3,5 @@
     <string name="image_of_wine">image of wine</string>
     <string name="image_of_shot">image of shot</string>
     <string name="image_of_beer">image of beer</string>
+    <string name="face_content_description">face changes based on user health</string>
 </resources>

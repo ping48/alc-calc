@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customizedrink">
+
+    <EditText
+        android:id="@+id/percentAlc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="420dp"
+        android:ems="10"
+        android:hint="% alcohol by volume"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ouncesDrank"
+        app:layout_constraintStart_toStartOf="@+id/ouncesDrank"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ouncesDrank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="276dp"
+        android:ems="10"
+        android:hint="ounces drank"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/addDrink"
+        app:layout_constraintStart_toStartOf="@+id/addDrink"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addDrink"
+        android:layout_width="118dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="114dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
