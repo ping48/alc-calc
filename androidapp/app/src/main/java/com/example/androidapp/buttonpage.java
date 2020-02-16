@@ -40,6 +40,7 @@ public class buttonpage extends AppCompatActivity {
         addBeer();
         addShot();
         addWine();
+        addCustom();
         gotoStatus();
     }
     public static void send_Data_firebase()
@@ -122,6 +123,18 @@ public class buttonpage extends AppCompatActivity {
                 startActivity(i);
             }
         }));
+        }
+    private void addCustom() {
+        otherButton = findViewById(R.id.otherButton);
+        otherButton.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j = new Intent(buttonpage.this, customizedrink.class);
+                startActivity(j);
+            }
+        }));
 
     }
-}
+
+    }
+
