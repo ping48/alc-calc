@@ -16,5 +16,12 @@
     <string name="alcohol_by_volume">% alcohol by volume</string>
     <string name="ounces_drank">ounces drank</string>
     <string name="add">Add</string>
+    <string name="quickly_manually_calculate_your_bac">Quickly Manually Calculate your BAC</string>
+    <string name="calculate">Calculate</string>
+    <string name="number_of_drinks">Number of Drinks</string>
+    <string name="your_bac_is">Your BAC is:</string>
+    <string name="go_back">Go Back</string>
+    <string name="hours_since_first_drink">Hours Since First Drink</string>
+    <string name="manual">Manual</string>
 
 </resources>

@@ -1,365 +1,365 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="93248a79-8c3d-4e6b-b278-e8f5b840316f" name="Default Changelist" comment="" />
-=======
-    <list default="true" id="8409d2c7-a97b-4194-a2f5-54c9df254f82" name="Default Changelist" comment="" />
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-<<<<<<< HEAD
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="FileEditorManager">
+    <component name="ChangeListManager">
+        <<<<<<< HEAD
+        <list default="true" id="93248a79-8c3d-4e6b-b278-e8f5b840316f" name="Default Changelist" comment="" />
+        =======
+        <list default="true" id="8409d2c7-a97b-4194-a2f5-54c9df254f82" name="Default Changelist" comment="" />
+        >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+        <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+        <option name="SHOW_DIALOG" value="false" />
+        <option name="HIGHLIGHT_CONFLICTS" value="true" />
+        <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+        <option name="LAST_RESOLUTION" value="IGNORE" />
+    </component>
+    <<<<<<< HEAD
+    <component name="DefaultGradleProjectSettings">
+        <option name="testRunner" value="GRADLE" />
+        <option name="delegatedBuild" value="true" />
+    </component>
+    <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-=======
-  <component name="FileEditorManager">
-    <leaf>
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-      <file pinned="false" current-in-tab="false">
+    =======
+    <component name="FileEditorManager">
+        <leaf>
+            >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+            <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/androidapp/app/src/main/java/com/example/androidapp/MainActivity.java">
+                    <provider selected="true" editor-type-id="text-editor" />
+                </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/androidapp/app/src/main/res/layout/activity_main.xml">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <<<<<<< HEAD
+                        <state relative-caret-position="75">
+                        <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+                        =======
+                        <state relative-caret-position="180">
+                            <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+                            >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+        </leaf>
+    </component>
+    <component name="Git.Settings">
+        <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    </component>
+    <component name="ProjectConfigurationFiles">
+        <option name="files">
+            <list>
+                <option value="$PROJECT_DIR$/.idea/alc-calc.iml" />
+                <<<<<<< HEAD
+                <option value="$PROJECT_DIR$/.idea/modules.xml" />
+                <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+                =======
+                <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+                <option value="$PROJECT_DIR$/.idea/modules.xml" />
+                >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+                <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+            </list>
+        </option>
+    </component>
+    <<<<<<< HEAD
+    <component name="ProjectFrameBounds">
+        <option name="x" value="20" />
+        <option name="y" value="43" />
+        <option name="width" value="1400" />
+        <option name="height" value="763" />
+        =======
+        <component name="ProjectFrameBounds" fullScreen="true">
+            <option name="width" value="1440" />
+            <option name="height" value="900" />
+            >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+        </component>
+        <component name="ProjectView">
+            <navigator currentView="ProjectPane" proportions="" version="1">
+                <foldersAlwaysOnTop value="true" />
+            </navigator>
+            <panes>
+                <<<<<<< HEAD
+                <pane id="PackagesPane" />
+                =======
+                >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+                <pane id="ProjectPane">
+                    <subPane>
+                        <expand>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                                <item name="src" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                                <item name="src" type="462c0819:PsiDirectoryNode" />
+                                <<<<<<< HEAD
+                                <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                                <item name="src" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+                                <item name="java" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                                <item name="src" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+                                <item name="java" type="462c0819:PsiDirectoryNode" />
+                                <item name="com" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                                <item name="src" type="462c0819:PsiDirectoryNode" />
+                                =======
+                                >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+                                <item name="main" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                                <item name="src" type="462c0819:PsiDirectoryNode" />
+                                <item name="main" type="462c0819:PsiDirectoryNode" />
+                                <item name="java" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                                <item name="src" type="462c0819:PsiDirectoryNode" />
+                                <item name="main" type="462c0819:PsiDirectoryNode" />
+                                <item name="java" type="462c0819:PsiDirectoryNode" />
+                                <item name="com" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                                <item name="src" type="462c0819:PsiDirectoryNode" />
+                                <item name="main" type="462c0819:PsiDirectoryNode" />
+                                <item name="java" type="462c0819:PsiDirectoryNode" />
+                                <item name="com" type="462c0819:PsiDirectoryNode" />
+                                <item name="example" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                                <item name="src" type="462c0819:PsiDirectoryNode" />
+                                <item name="main" type="462c0819:PsiDirectoryNode" />
+                                <item name="java" type="462c0819:PsiDirectoryNode" />
+                                <item name="com" type="462c0819:PsiDirectoryNode" />
+                                <item name="example" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                                <item name="src" type="462c0819:PsiDirectoryNode" />
+                                <item name="main" type="462c0819:PsiDirectoryNode" />
+                                <item name="res" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                                <item name="src" type="462c0819:PsiDirectoryNode" />
+                                <item name="main" type="462c0819:PsiDirectoryNode" />
+                                <item name="res" type="462c0819:PsiDirectoryNode" />
+                                <item name="layout" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            <<<<<<< HEAD
+                            <path>
+                                <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
+                                <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
+                                <item name="androidapp" type="462c0819:PsiDirectoryNode" />
+                                <item name="app" type="462c0819:PsiDirectoryNode" />
+                                <item name="src" type="462c0819:PsiDirectoryNode" />
+                                <item name="test" type="462c0819:PsiDirectoryNode" />
+                            </path>
+                            =======
+                            >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+                        </expand>
+                        <select />
+                    </subPane>
+                </pane>
+                <<<<<<< HEAD
+                =======
+                <pane id="PackagesPane" />
+                >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+                <pane id="Scope" />
+            </panes>
+        </component>
+        <component name="PropertiesComponent">
+            <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+            <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+        </component>
+        <component name="RunDashboard">
+            <option name="ruleStates">
+                <list>
+                    <RuleState>
+                        <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+                    </RuleState>
+                    <RuleState>
+                        <option name="name" value="StatusDashboardGroupingRule" />
+                    </RuleState>
+                </list>
+            </option>
+        </component>
+        <<<<<<< HEAD
+        <component name="RunManager">
+            <configuration name="/Users/helloworld/Documents/treehacks20/alc-calc/androidapp/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+                <ExternalSystemSettings>
+                    <option name="executionName" />
+                    <option name="externalProjectPath" value="$PROJECT_DIR$/androidapp/build.gradle" />
+                    <option name="externalSystemIdString" value="GRADLE" />
+                    <option name="scriptParameters" />
+                    <option name="taskDescriptions">
+                        <list />
+                    </option>
+                    <option name="taskNames">
+                        <list />
+                    </option>
+                    <option name="vmOptions" />
+                </ExternalSystemSettings>
+                <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+                <method v="2" />
+            </configuration>
+            <recent_temporary>
+                <list>
+                    <item itemvalue="Gradle./Users/helloworld/Documents/treehacks20/alc-calc/androidapp/build.gradle" />
+                </list>
+            </recent_temporary>
+        </component>
+        =======
+        >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+        <component name="SvnConfiguration">
+            <configuration />
+        </component>
+        <component name="TaskManager">
+            <task active="true" id="Default" summary="Default task">
+                <<<<<<< HEAD
+                <changelist id="93248a79-8c3d-4e6b-b278-e8f5b840316f" name="Default Changelist" comment="" />
+                <created>1581787512334</created>
+                <option name="number" value="Default" />
+                <option name="presentableId" value="Default" />
+                <updated>1581787512334</updated>
+                =======
+                <changelist id="8409d2c7-a97b-4194-a2f5-54c9df254f82" name="Default Changelist" comment="" />
+                <created>1581760004451</created>
+                <option name="number" value="Default" />
+                <option name="presentableId" value="Default" />
+                <updated>1581760004451</updated>
+                >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+            </task>
+            <servers />
+        </component>
+        <component name="ToolWindowManager">
+            <<<<<<< HEAD
+            <frame x="20" y="43" width="1400" height="763" extended-state="0" />
+            <layout>
+                <window_info id="Captures" order="0" weight="0.25" />
+                <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33431518" />
+                <window_info id="Structure" order="2" side_tool="true" />
+                <window_info id="Image Layers" order="3" />
+                <window_info id="Designer" order="4" />
+                <window_info id="Resources Explorer" order="5" />
+                <window_info id="Capture Tool" order="6" />
+                <window_info id="Favorites" order="7" side_tool="true" />
+                <window_info anchor="bottom" id="Run" order="0" visible="true" weight="0.32935917" />
+                <window_info anchor="bottom" id="TODO" order="1" />
+                <window_info anchor="bottom" id="Debug" order="2" />
+                <window_info anchor="bottom" id="Terminal" order="3" />
+                <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+                <window_info anchor="bottom" id="Version Control" order="5" />
+                <window_info anchor="right" id="Capture Analysis" order="0" />
+                <window_info anchor="right" id="Theme Preview" order="1" />
+                <window_info anchor="right" id="Preview" order="2" weight="0.3298969" />
+                <window_info anchor="right" id="Assistant" order="3" weight="0.33505154" />
+                <window_info anchor="right" id="Palette&#9;" order="4" />
+                <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+            </layout>
+        </component>
+        <component name="com.intellij.coverage.CoverageDataManagerImpl">
+            <SUITE FILE_PATH="coverage/alc_calc$_Users_helloworld_Documents_treehacks20_alc_calc_androidapp_build_gradle.ic" NAME="$PROJECT_DIR$/androidapp/build.gradle Coverage Results" MODIFIED="1581787723885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+        </component>
+        =======
+        <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+        <editor active="true" />
+        <layout>
+            <window_info content_ui="combo" id="Project" visible="true" weight="0.33476394" />
+            <window_info id="Structure" side_tool="true" />
+            <window_info id="Image Layers" />
+            <window_info id="Designer" />
+            <window_info id="Resources Explorer" />
+            <window_info id="Capture Tool" />
+            <window_info id="Favorites" side_tool="true" />
+            <window_info id="Captures" order="0" weight="0.25" />
+            <window_info anchor="bottom" id="Version Control" />
+            <window_info anchor="bottom" id="TODO" />
+            <window_info anchor="bottom" id="Terminal" />
+            <window_info anchor="bottom" id="Event Log" side_tool="true" />
+            <window_info anchor="right" id="Capture Analysis" />
+            <window_info anchor="right" id="Theme Preview" />
+            <window_info active="true" anchor="right" id="Preview" visible="true" weight="0.33404863" />
+            <window_info anchor="right" id="Palette&#9;" />
+        </layout>
+    </component>
+    >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+    <component name="editorHistoryManager">
         <entry file="file://$PROJECT_DIR$/androidapp/app/src/main/java/com/example/androidapp/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor" />
+            <provider selected="true" editor-type-id="text-editor" />
         </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/androidapp/app/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="75">
-              <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-=======
-            <state relative-caret-position="180">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-            </state>
-          </provider>
+            <provider selected="true" editor-type-id="text-editor">
+                <<<<<<< HEAD
+                <state relative-caret-position="75">
+                <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+                =======
+                <state relative-caret-position="180">
+                    <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+                    >>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
+                </state>
+            </provider>
         </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/alc-calc.iml" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-=======
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-        <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
-      </list>
-    </option>
-  </component>
-<<<<<<< HEAD
-  <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="43" />
-    <option name="width" value="1400" />
-    <option name="height" value="763" />
-=======
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-  </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-<<<<<<< HEAD
-      <pane id="PackagesPane" />
-=======
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-=======
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-<<<<<<< HEAD
-            <path>
-              <item name="alc-calc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alc-calc" type="462c0819:PsiDirectoryNode" />
-              <item name="androidapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-=======
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-<<<<<<< HEAD
-=======
-      <pane id="PackagesPane" />
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-      <pane id="Scope" />
-    </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-<<<<<<< HEAD
-  <component name="RunManager">
-    <configuration name="/Users/helloworld/Documents/treehacks20/alc-calc/androidapp/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/androidapp/build.gradle" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle./Users/helloworld/Documents/treehacks20/alc-calc/androidapp/build.gradle" />
-      </list>
-    </recent_temporary>
-  </component>
-=======
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
-      <changelist id="93248a79-8c3d-4e6b-b278-e8f5b840316f" name="Default Changelist" comment="" />
-      <created>1581787512334</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1581787512334</updated>
-=======
-      <changelist id="8409d2c7-a97b-4194-a2f5-54c9df254f82" name="Default Changelist" comment="" />
-      <created>1581760004451</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1581760004451</updated>
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-    </task>
-    <servers />
-  </component>
-  <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="20" y="43" width="1400" height="763" extended-state="0" />
-    <layout>
-      <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33431518" />
-      <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="Resources Explorer" order="5" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="0" visible="true" weight="0.32935917" />
-      <window_info anchor="bottom" id="TODO" order="1" />
-      <window_info anchor="bottom" id="Debug" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Preview" order="2" weight="0.3298969" />
-      <window_info anchor="right" id="Assistant" order="3" weight="0.33505154" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
-    </layout>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/alc_calc$_Users_helloworld_Documents_treehacks20_alc_calc_androidapp_build_gradle.ic" NAME="$PROJECT_DIR$/androidapp/build.gradle Coverage Results" MODIFIED="1581787723885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-=======
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" visible="true" weight="0.33476394" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Resources Explorer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Captures" order="0" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info active="true" anchor="right" id="Preview" visible="true" weight="0.33404863" />
-      <window_info anchor="right" id="Palette&#9;" />
-    </layout>
-  </component>
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/androidapp/app/src/main/java/com/example/androidapp/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/androidapp/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="75">
-          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-=======
-        <state relative-caret-position="180">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
->>>>>>> 9f77b243cb1b75d6480deb02195bc497874b9425
-        </state>
-      </provider>
-    </entry>
-  </component>
+    </component>
 </project>
