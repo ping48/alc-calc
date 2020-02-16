@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -132,63 +133,41 @@ public class buttonpage extends AppCompatActivity {
                 //get data once
 
                 DocumentReference userRef = fr.collection("users").document(userID);
+                Log.d("bb", "click");
                 userRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>(){
                     @Override
                     public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                        if (task.isSuccessful()) {
+                            TextView warn = findViewById(R.id.warning2);
+                            if(firstDrink){
+                                warn.setText("Please select a first drink");
+                            }
+                            else{
+                            Log.d("bb", "error");
                             DocumentSnapshot document = task.getResult();
                             long totalAlc = (long)document.get("totalAlcSoFar");
-                            long start = (long)document.get("firstTimestamp");
+                            long start = ((com.google.firebase.Timestamp)document.get("firstTimestamp")).toDate().getTime();
                             long weight = (long)document.get("weight");
                             double gender = (double)document.get("gender");
                             long now = System.currentTimeMillis();
                             long elapsedTime = now - start; //in milliseconds
-                            long elapsedTimeinHours = (elapsedTime * 1000) / 3600;
+                            long elapsedTimeinHours = (elapsedTime / 3600000);
                             bac = (double)(totalAlc * 0.6) * (double)5.14 / (weight * gender) - (double) (0.015 * elapsedTimeinHours);
-                            if (document.exists()) {
-                                Log.d("aa", "DocumentSnapshot data: " + document.getData());
-                            } else {
-                                Log.d("bb", "No such document");
+
+                            if (totalAlc == 0 || bac < 0)
+                            {
+                                bac = 0;
                             }
-                        } else {
-                            Log.d("cc", "get failed with ", task.getException());
-                        }
-                    }
+                            Intent i = new Intent(buttonpage.this, status.class);
+                            i.putExtra("bac-val", bac);
+                            startActivity(i);
 
+                            }
+
+                    };
                 });
-//                dr.addValueEventListener(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                        long totalAlc = (long)dataSnapshot.child("totalAlcSoFar").getValue();
-//                        long start = (long)dataSnapshot.child("firstTimestamp").getValue();
-//                        long weight = (long)dataSnapshot.child("weight").getValue();
-//                        long gender = (long)dataSnapshot.child("gender").getValue();
-//                        long now = System.currentTimeMillis();
-//                        long elapsedTime = now - start; //in milliseconds
-//                        long elapsedTimeinHours = (elapsedTime * 1000) / 3600;
-//                        bac = (long)(totalAlc * 0.6) * (long)5.14 / (weight * gender) - (long)(0.015 * elapsedTimeinHours);
-////                        Log.d("bac", bac);
-//                        if (totalAlc == 0 || bac < 0)
-//                        {
-//                            bac = 0;
-//                        }
-//
-//                    }
-//                    @Override
-//                    public void onCancelled(@NonNull DatabaseError databaseError){
-//
-//                    }
-//                });
-
-
-                Intent i = new Intent(buttonpage.this, status.class);
-                i.putExtra("bac-val", bac);
-
-                //pass the bac # using intent
-                startActivity(i);
             }
         }));
-        }
+    }
     private void addCustom() {
         otherButton = findViewById(R.id.otherButton);
         otherButton.setOnClickListener((new View.OnClickListener() {
