@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.TextView;
+
 
 public class status extends AppCompatActivity {
 
@@ -37,5 +39,6 @@ public class status extends AppCompatActivity {
             }
 
         }
+
     }
 
