@@ -31,7 +31,6 @@ public class buttonpage extends AppCompatActivity {
     private Button statusButton;
     private static Timestamp ts;
     private static boolean firstDrink = true;
-    double num_drinks = 0;
     static String userID = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +40,7 @@ public class buttonpage extends AppCompatActivity {
         addBeer();
         addShot();
         addWine();
+        addCustom();
         gotoStatus();
     }
     public static void send_Data_firebase()
@@ -61,11 +61,10 @@ public class buttonpage extends AppCompatActivity {
         data.put("alc_amount", 1);
         data.put("timestamp", FieldValue.serverTimestamp());
 
-
-
-
-
-
+        if(firstDrink){
+            userRef.update("firstTimestamp", FieldValue.serverTimestamp());
+            firstDrink = false;
+        }
 
         //create a subcollection drinks_record
         CollectionReference drinks_record = userRef.collection("drinks_record");
@@ -120,10 +119,40 @@ public class buttonpage extends AppCompatActivity {
         statusButton.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FirebaseFirestore db = FirebaseFirestore.getInstance();
+                DocumentReference userRef = db.collection("users").document(userID);
+                userRef.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        long totalAlc = dataSnapshot.child("totalAlcSoFar").getValue();
+                        long start = (long)dataSnapshot.child("firstTimestamp").getValue();
+                        long now = System.currentTimeMillis();
+                        long elapsedTime = now - start; //in milliseconds
+                        long elapsedTimeinHours = (elapsedTime * 1000) / 3600;
+                        if (totalAlc == 0)
+                        {
+                            //send bac to be 0
+                        }
+                        long bac = //plug in the formula
+                    }
+                });
                 Intent i = new Intent(buttonpage.this, status.class);
+                //pass the bac # using intent
                 startActivity(i);
+            }
+        }));
+        }
+    private void addCustom() {
+        otherButton = findViewById(R.id.otherButton);
+        otherButton.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j = new Intent(buttonpage.this, customizedrink.class);
+                startActivity(j);
             }
         }));
 
     }
-}
+
+    }
+
