@@ -25,7 +25,23 @@ public class buttonpage extends AppCompatActivity {
         addWine();
         gotoStatus();
         addCustom();
+        configureCalculator();
     }
+    private void configureCalculator(){
+        Button calc = (Button) findViewById(R.id.manual);
+        calc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String weight = getIntent().getStringExtra("weight");
+                String gendVal = getIntent().getStringExtra("genderValue");
+                Intent k = new Intent(buttonpage.this, Calculator.class);
+                k.putExtra("weight",weight);
+                k.putExtra("genderValue",gendVal);
+                startActivity(k);
+            }
+        });
+    }
+
     private void addBeer(){//adds one standard drink after beer button is pressed
         beerButton = findViewById(R.id.beerButton);
         //assigning beerButton an actual value
