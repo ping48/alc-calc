@@ -32,13 +32,15 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
     private RadioGroup gender;
     private RadioButton theButton;
+    private static double gend;
+    private static double height;
+    private static int weight;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         gender = (RadioGroup) findViewById(R.id.genders);
         configureNextButton();
-        test();
     }
     private void configureNextButton(){
         Button nextButton = (Button) findViewById(R.id.submit);
@@ -52,24 +54,34 @@ public class MainActivity extends AppCompatActivity {
                 String inch1 = inch.getText().toString();
                 double inch2 = Integer.parseInt(inch1);
                 double totalInches = (12.0 * (feet2 + 0.0) + inch2);
+                height = totalInches;
                 EditText pounds = findViewById(R.id.weight);
                 String pounds1 = pounds.getText().toString();
                 //
                 int radioId = gender.getCheckedRadioButtonId();
                 theButton = findViewById(radioId);
                 double gendVal;
-                if(((String)(theButton.getText())).equals("Male"))
+                if(((String)(theButton.getText())).equals("Male")){
                     gendVal = 0.73;
-                else
+                    gend = gendVal;
+                    System.out.println("yee");
+                }
+
+                else{
                     gendVal = 0.66;
-                //
+                    gend = gendVal;
+                }
+
                 int pounds2 = Integer.parseInt(pounds1);
+                weight = pounds2;
                 //change this to ButtonPage
                 Intent i = new Intent(MainActivity.this, buttonpage.class);
                 i.putExtra("height", totalInches);
                 i.putExtra("weight", pounds2);
                 i.putExtra("genderValue", gendVal);
                 startActivity(i);
+
+                test();
             }
         });
     }
@@ -80,26 +92,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static void test(){
-//        FirebaseDatabase database = FirebaseDatabase.getInstance();
-////        DatabaseReference myRef = database.getReference("message");
-////
-////        myRef.setValue("Hello, World!");
-//        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
-//        String userID = "XK7AARkwcgBuQNm8LtJX78797";
-//        User user = new User();
-//        user.setU_height(5);
-//        user.setU_weight(10);
-//
-//        DatabaseReference firebaseUser = mDatabase.child("users").child(userID);
-//        firebaseUser.setValue(user);
-//
-//        System.out.println("test");
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 // Create a new user with a first and last name
         Map<String, Object> user = new HashMap<>();
-        user.put("first", "Ada");
-        user.put("last", "Lovelace");
-        user.put("born", 1815);
+        user.put("gender", gend);
+        user.put("weight", weight);
+        user.put("height", height);
+        user.put("totalAlcSoFar", 0);
 
 // Add a new document with a generated ID
         db.collection("users")
