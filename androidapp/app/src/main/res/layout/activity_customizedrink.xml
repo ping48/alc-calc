@@ -29,7 +29,7 @@
         android:id="@+id/ouncesDrank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="63dp"
+        android:layout_marginStart="62dp"
         android:layout_marginTop="274dp"
         android:layout_marginEnd="62dp"
         android:layout_marginBottom="276dp"
@@ -39,23 +39,35 @@
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/addDrink"
-        app:layout_constraintStart_toStartOf="@+id/addDrink"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/addDrink"
         android:layout_width="118dp"
         android:layout_height="89dp"
         android:layout_marginStart="146dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="365dp"
         android:layout_marginEnd="147dp"
-        android:layout_marginBottom="114dp"
-        android:text="@string/add"
+        android:layout_marginBottom="149dp"
+        android:text="Add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/beep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="80dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
