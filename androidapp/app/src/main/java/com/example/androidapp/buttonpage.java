@@ -1,12 +1,26 @@
 package com.example.androidapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FieldValue;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.sql.Timestamp;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 //new imports underneath
 
 public class buttonpage extends AppCompatActivity {
@@ -15,10 +29,14 @@ public class buttonpage extends AppCompatActivity {
     private ImageButton wineButton;
     private Button otherButton;
     private Button statusButton;
+    private static Timestamp ts;
+    private static boolean firstDrink = true;
     double num_drinks = 0;
+    static String userID = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        userID = getIntent().getStringExtra("currentUserRefID");
         setContentView(R.layout.activity_buttonpage);
         addBeer();
         addShot();
@@ -29,14 +47,25 @@ public class buttonpage extends AppCompatActivity {
     {
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        String userRefID = getIntent().getStringExtra("currentUserRefID");
-        DocumentReference userRef = db.collection("users").document("userRefID");
+        DocumentReference userRef = db.collection("users").document(userID);
         userRef.update("totalAlcSoFar", FieldValue.increment(1));
+
+        if(firstDrink){
+            Date date = new Date();
+            ts = new Timestamp(date.getTime());
+            firstDrink = false;
+        }
 
         // Add a new document with a generated id.
         Map<String, Object> data = new HashMap<>();
         data.put("alc_amount", 1);
         data.put("timestamp", FieldValue.serverTimestamp());
+
+
+
+
+
+
 
         //create a subcollection drinks_record
         CollectionReference drinks_record = userRef.collection("drinks_record");
@@ -45,13 +74,13 @@ public class buttonpage extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
-                        Log.d(TAG, "DocumentSnapshot written with ID: " + documentReference.getId());
+//                        Log.d(TAG, "DocumentSnapshot written with ID: " + documentReference.getId());
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Log.w(TAG, "Error adding document", e);
+//                        Log.w(TAG, "Error adding document", e);
                     }
                 });
     }

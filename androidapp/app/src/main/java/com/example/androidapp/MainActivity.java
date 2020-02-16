@@ -23,9 +23,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.sql.Timestamp;
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -36,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
     private static double height;
     private static int weight;
     private static DocumentReference curUserRef;
+    private static String curUserRefID = "";
+    private static boolean firstDrink = true;
+    private static Timestamp ts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,11 +105,37 @@ public class MainActivity extends AppCompatActivity {
         user.put("weight", weight);
         user.put("height", height);
         user.put("totalAlcSoFar", 0);
+        user.put("timestamp", FieldValue.serverTimestamp());
+
+        if(firstDrink){
+            Date date = new Date();
+            ts = new Timestamp(date.getTime());
+            firstDrink = false;
+        }
+
+//        db.collection("users")
+//                .add(user)
+//                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+//                    @Override
+//                    public void onSuccess(DocumentReference documentReference) {
+////                        Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+//                    }
+//                })
+//                .addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+////                        Log.w(TAG, "Error adding document", e);
+//                    }
+//                });
+
+
+
 
 // Add a new document with a generated ID
         curUserRef = db.collection("users").document();
         curUserRefID = curUserRef.getId();
         curUserRef.set(user);
+        System.out.println("hello");
     }
 
 }
