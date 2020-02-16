@@ -72,8 +72,8 @@ public class buttonpage extends AppCompatActivity {
         otherButton.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(buttonpage.this, customizedrink.class);
-                startActivity(i);
+                Intent j = new Intent(buttonpage.this, customizedrink.class);
+                startActivity(j);
             }
         }));
 
