@@ -119,7 +119,25 @@ public class buttonpage extends AppCompatActivity {
         statusButton.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FirebaseFirestore db = FirebaseFirestore.getInstance();
+                DocumentReference userRef = db.collection("users").document(userID);
+                userRef.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        long totalAlc = dataSnapshot.child("totalAlcSoFar").getValue();
+                        long start = (long)dataSnapshot.child("firstTimestamp").getValue();
+                        long now = System.currentTimeMillis();
+                        long elapsedTime = now - start; //in milliseconds
+                        long elapsedTimeinHours = (elapsedTime * 1000) / 3600;
+                        if (totalAlc == 0)
+                        {
+                            //send bac to be 0
+                        }
+                        long bac = //plug in the formula
+                    }
+                });
                 Intent i = new Intent(buttonpage.this, status.class);
+                //pass the bac # using intent
                 startActivity(i);
             }
         }));
